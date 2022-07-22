@@ -1,1 +1,55 @@
+body {
+  margin: 0;
+}
 
+.App {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+
+  .left-nav-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: darkslateblue;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+
+    .nav-buttons-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        margin: 5px;
+        background-color: white;
+        color: black;
+        padding: 3%;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+    }
+  }
+  .main-content-container {
+    display: flex;
+
+    .header-wrapper {
+      img {
+        width: 100%;
+      }
+
+      .header-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}

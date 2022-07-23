@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  background-color: #3d3d3d;
+  color: #fff;
 }
 
 .App {
@@ -10,10 +12,10 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: darkslateblue;
+    background-color: #212121;
 
     img {
-      height: 100%;
+      height: 250px;
       width: 100%;
     }
 
@@ -22,6 +24,7 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin: 50px 0;
 
       a {
         text-decoration: none;
@@ -34,11 +37,16 @@ body {
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        margin-bottom: 10px;
       }
     }
   }
   .main-content-container {
     display: flex;
+
+    .content {
+      margin: 0 10%;
+    }
 
     .header-wrapper {
       img {
@@ -49,6 +57,32 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+      }
+
+      .row1-wrapper {
+        display: flex;
+
+        p {
+          width: 50%;
+          margin-right: 20px;
+        }
+
+        img {
+          width: 50%;
+        }
+      }
+
+      .row2-wrapper {
+        display: flex;
+
+        p {
+          width: 50%;
+          margin-left: 20px;
+        }
+
+        img {
+          width: 50%;
+        }
       }
     }
   }

@@ -1,7 +1,8 @@
 body {
   margin: 0;
-  background-color: #3d3d3d;
+  background-color: #1d1d1b;
   color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .App {
@@ -12,11 +13,18 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: #212121;
+    background-color: #090c13;
+    border-right: 1px solid #3d3d3d;
+
+    h3 {
+      margin: 25px 0;
+      color: #ffcd00;
+    }
 
     img {
       height: 250px;
       width: 100%;
+      background-blend-mode: lighten;
     }
 
     .nav-buttons-wrapper {
@@ -24,39 +32,63 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 50px 0;
+      margin-bottom: 25px;
 
       a {
         text-decoration: none;
-        margin: 5px;
-        background-color: white;
-        color: black;
+        margin: 15px;
+        background-color: #ffcd00;
+        color: #090c13;
         padding: 3%;
         width: 80%;
+        font-size: 15px;
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        margin-bottom: 10px;
+        margin-bottom: 25px;
+        border-radius: 7px;
       }
     }
   }
   .main-content-container {
     display: flex;
+    font-size: 18px;
+    letter-spacing: 1px;
 
     .content {
       margin: 0 10%;
+
+      .main-content {
+        margin-bottom: 20px;
+      }
     }
 
     .header-wrapper {
-      img {
+      .pokeball {
         width: 100%;
+        height: 250px;
+        opacity: 30%;
+      }
+
+      .title {
+        position: absolute;
+        z-index: 1;
+        left: 34%;
+        top: 4%;
+        height: 23%;
       }
 
       .header-text {
         display: flex;
         flex-direction: column;
         align-items: center;
+        border-bottom: 1px solid #ffcd00;
+        font-size: 20px;
+      }
+
+      .main-content {
+        margin-top: 20px;
       }
 
       .row1-wrapper {
@@ -64,10 +96,12 @@ body {
 
         p {
           width: 50%;
-          margin-right: 20px;
+          margin: 0px;
+          padding-right: 5px;
         }
 
         img {
+          height: fit-content;
           width: 50%;
         }
       }
@@ -81,7 +115,25 @@ body {
         }
 
         img {
+          height: fit-content;
           width: 50%;
+        }
+      }
+
+      .btn-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .discord-btn {
+          margin-top: 20px;
+
+          text-decoration: none;
+          border-radius: 20px;
+          padding: 10px;
+          border: 3px solid #ffcd00;
+          color: #ffcd00;
+          font-size: 24px;
         }
       }
     }

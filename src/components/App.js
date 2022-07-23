@@ -1,3 +1,4 @@
+import title from "../images/title.png";
 import logo from "../images/main-logo.png";
 import bottomlogo from "../images/xtremespeed-logo.png";
 import banner from "../images/pokeball-banner.png";
@@ -8,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <div className="left-nav-container">
-        <img src={logo} alt="gen123 logo" />
+        <img src={bottomlogo} alt="gen123 starters" />
 
         <div className="nav-buttons-wrapper">
           <h3>Guides/Routes:</h3>
@@ -67,15 +68,15 @@ function App() {
           </a>
         </div>
 
-        <img src={bottomlogo} alt="gen123 starters" />
+        <img src={logo} alt="psr logo" />
       </div>
 
       <div className="main-content-container">
         <div className="header-wrapper">
-          <img src={banner} alt="pokeball banner" />
+          <img className="pokeball" src={banner} alt="pokeball banner" />
+          <img className="title" src={title} alt="xtremespeed title" />
           <div className="content">
             <div className="header-text">
-              <h1>XtremeSpeed</h1>
               <h3>
                 A compilation of Pokémon generations 1-3 speedrunning guides
               </h3>
@@ -91,36 +92,18 @@ function App() {
               commodo sem pharetra commodo egestas. Fusce at porta arcu. Cras
               posuere leo at erat mattis efficitur. Sed vel aliquam orci. Donec
               euismod erat nec rhoncus egestas. Fusce maximus rhoncus blandit.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed
-              velit egestas, tristique enim sit amet, bibendum ligula. Nulla
-              commodo sem pharetra commodo egestas. Fusce at porta arcu. Cras
-              posuere leo at erat mattis efficitur. Sed vel aliquam orci. Donec
-              euismod erat nec rhoncus egestas. Fusce maximus rhoncus blandit.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed
-              velit egestas, tristique enim sit amet, bibendum ligula. Nulla
-              commodo sem pharetra commodo egestas. Fusce at porta arcu. Cras
-              posuere leo at erat mattis efficitur. Sed vel aliquam orci. Donec
-              euismod erat nec rhoncus egestas. Fusce maximus rhoncus blandit.
             </div>
 
             <div className="row1-wrapper">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                sed velit egestas, tristique enim sit amet, bibendum ligula.
-                Nulla commodo sem pharetra commodo egestas. Fusce at porta arcu.
-                Cras posuere leo at erat mattis efficitur. Sed vel aliquam orci.
+                sed velit egestas, tristique enim sit amet, bibendum ligula. Nu
+                commodo sem pharetra commodo egestas. Fusce at porta arcu. Cras
+                posuere leo at erat mattis efficitur. Sed vel aliquam orci.
                 Donec euismod erat nec rhoncus egestas. Fusce maximus rhoncus
                 blandit. Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit. Fusce sed velit egestas, tristique enim sit amet, bibendum
-                ligula. Nulla commodo sem pharetra commodo egestas. Fusce at
-                porta arcu. Cras posuere leo at erat mattis efficitur. Sed vel
-                aliquam orci. Donec euismod erat nec rhoncus egestas. Fusce
-                maximus rhoncus blandit. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Fusce sed velit egestas, tristique enim sit
-                amet, bibendum ligula. Nulla commodo sem pharetra commodo
-                egestas. Fusce at porta arcu. Cras posuere leo at erat mattis
-                efficitur. Sed vel aliquam orci. Donec euismod erat nec rhoncus
-                egestas. Fusce maximus rhoncus blandit.
+                ligula.
               </p>
               <img src={textimage1} />
             </div>
@@ -135,6 +118,20 @@ function App() {
                 Donec euismod erat nec rhoncus egestas. Fusce maximus rhoncus
                 blandit. Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit. Fusce sed velit egestas, tristique enim sit amet, bibendum
+                ligula.
+              </p>
+            </div>
+
+            <div className="main-content">
+              <p>
+                {" "}
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                sed velit egestas, tristique enim sit amet, bibendum ligula.
+                Nulla commodo sem pharetra commodo egestas. Fusce at porta arcu.
+                Cras posuere leo at erat mattis efficitur. Sed vel aliquam orci.
+                Donec euismod erat nec rhoncus egestas. Fusce maximus rhoncus
+                blandit. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Fusce sed velit egestas, tristique enim sit amet, bibendum
                 ligula. Nulla commodo sem pharetra commodo egestas. Fusce at
                 porta arcu. Cras posuere leo at erat mattis efficitur. Sed vel
                 aliquam orci. Donec euismod erat nec rhoncus egestas. Fusce
@@ -145,6 +142,11 @@ function App() {
                 efficitur. Sed vel aliquam orci. Donec euismod erat nec rhoncus
                 egestas. Fusce maximus rhoncus blandit.
               </p>
+            </div>
+            <div className="btn-wrapper">
+              <a className="discord-btn" href="https://discord.gg/t3pXHue9dF">
+                Join the PSR Discord!
+              </a>
             </div>
           </div>
         </div>

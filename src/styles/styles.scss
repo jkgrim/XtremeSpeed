@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #1d1d1b;
+  background-color: #1c1d21;
   color: #fff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -19,6 +19,7 @@ body {
     h3 {
       margin: 25px 0;
       color: #ffcd00;
+      text-decoration: underline;
     }
 
     img {
@@ -49,18 +50,23 @@ body {
         margin-bottom: 25px;
         border-radius: 7px;
       }
+
+      a:hover {
+        transition: 0.2s ease-in-out;
+        transform: translateY(-0.35em);
+      }
     }
   }
-  .main-content-container {
+  .right-content-container {
     display: flex;
     font-size: 18px;
     letter-spacing: 1px;
 
-    .content {
+    .main-content-wrapper {
       margin: 0 10%;
 
-      .main-content {
-        margin-bottom: 20px;
+      .top-content {
+        margin: 20px 0;
       }
     }
 
@@ -74,9 +80,9 @@ body {
       .title {
         position: absolute;
         z-index: 1;
-        left: 34%;
-        top: 4%;
-        height: 23%;
+        left: 30%;
+        top: 7.3%;
+        height: 16%;
       }
 
       .header-text {
@@ -87,11 +93,7 @@ body {
         font-size: 20px;
       }
 
-      .main-content {
-        margin-top: 20px;
-      }
-
-      .row1-wrapper {
+      .text-image-wrapper {
         display: flex;
 
         p {
@@ -106,7 +108,7 @@ body {
         }
       }
 
-      .row2-wrapper {
+      .image-text-wrapper {
         display: flex;
 
         p {
@@ -120,14 +122,18 @@ body {
         }
       }
 
+      .bottom-content {
+        border-bottom: 1px solid #ffcd00;
+        padding-bottom: 20px;
+      }
+
       .btn-wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
 
         .discord-btn {
-          margin-top: 20px;
-
+          margin-top: 30px;
           text-decoration: none;
           border-radius: 20px;
           padding: 10px;
@@ -135,6 +141,35 @@ body {
           color: #ffcd00;
           font-size: 24px;
         }
+
+        .discord-btn:hover {
+          background: linear-gradient(to right, #1d1d1d 50%, #ffcd00 50%) right;
+          background-size: 200% 100%;
+          color: #1d1d1b;
+          transition: 0.2s ease-in-out;
+        }
+      }
+
+      .sm-wrapper {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        font-size: 50px;
+        color: #ffcd00;
+        cursor: pointer;
+
+        .icon {
+          padding: 15px;
+        }
+      }
+
+      .copyright {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 12px;
+        margin: 25px;
+        color: #ffcd00;
       }
     }
   }

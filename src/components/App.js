@@ -169,7 +169,7 @@ function App() {
             <footer className="copyright">
               &copy; 2022 Pokémon. &copy;1995 - 2022 <br />A Nintendo/Creatures
               Inc./GAME FREAK inc. TM,
-              <br /> ®Nintendo.
+              <br /> &reg;Nintendo.
             </footer>
           </div>
         </div>
